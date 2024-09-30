@@ -1,0 +1,28 @@
+{
+  "mode": "debug",
+  "host": "0.0.0.0",
+  "port": 8090,
+  "log": {
+    "level":"debug",
+    "filename": "logs/Zgo.log",
+    "maxsize" : 300,
+    "max_age" : 7,
+    "max_backups": 10
+  },
+  "database": {
+    "driver":"mysql",
+    "host":"10.128.0.4",
+    "port":"3306",
+    "database":"zgo",
+    "username":"zgo_user",
+    "password":"zgo",
+    "charset":"utf8mb4",
+    "maximum_connection":10,
+    "maximum_free_connection":50,
+    "timeout":-1
+  },
+  "secret_key": "Ub=~sV,U1QXmvHObh_My6#6-O9>}zK{8",
+  "jwt": {
+    "exp": 1800
+  }
+}
