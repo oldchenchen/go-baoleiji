@@ -3,7 +3,7 @@ package Api
 import (
 	"ZgoMast/application/Constants"
 	. "ZgoMast/application/Service"
-	. "ZgoMast/application/Utils"
+	. "ZgoMast/application/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

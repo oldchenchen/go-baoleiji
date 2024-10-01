@@ -12,4 +12,6 @@ func InitDB(cfg *Config.DatabaseConfig) {
 	Orm.SingularTable(true)
 	//数据迁移
 	Orm.AutoMigrate(&Model.User{})
+	Orm.AutoMigrate(&Model.Host{})
+	Orm.AutoMigrate(&Model.HostCategory{})
 }

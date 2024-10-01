@@ -15,6 +15,8 @@ func InitRouter() *gin.Engine {
 	})
 	APIRouter := Router.Group("/api")
 	InitUserRouter(APIRouter)
+	APIHost := Router.Group("/host")
+	InitUserRouter(APIHost)
 
 	return Router
 }

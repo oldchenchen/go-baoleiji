@@ -3,7 +3,7 @@ package Service
 import (
 	"ZgoMast/application/Constants"
 	. "ZgoMast/application/Model"
-	. "ZgoMast/application/Utils"
+	. "ZgoMast/application/utils"
 	"ZgoMast/application/validator"
 	"errors"
 	"fmt"

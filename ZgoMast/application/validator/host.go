@@ -8,12 +8,12 @@ import (
 )
 
 /**
-登录验证器
+添加主机类别的验证器
 */
 
-func UserValidator(user *User) error {
+func HostCategoryValidator(hostCategory *HostCategory) error {
 	validate, trans := GenValidate()
-	err := validate.Struct(user)
+	err := validate.Struct(hostCategory)
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
 			return errors.New(err.Translate(trans))

@@ -30,7 +30,7 @@ func (user User) GetOneByid(id int) {
 	Orm.First(&user, id)
 }
 func (user User) GetOneByAccount(account string) {
-	Orm.First(&user, "username = ? or mobile = ? or email", account, account, account)
+	Orm.First(&user, "username = ? or mobile = ? ", account, account)
 }
 func (user User) GetALL() []User {
 	var users []User
